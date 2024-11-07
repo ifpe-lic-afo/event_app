@@ -1,0 +1,49 @@
+# Diretórios de build
+build/
+.idea/
+.vscode/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos
+
+# Arquivos gerados por pacotes
+pubspec.lock
+*.iml
+
+# Arquivos de configuração do sistema operacional
+.DS_Store
+*.log
+
+# Diretórios de dependências
+bin/
+cache/
+android/.gradle/
+android/app/app.iml
+android/local.properties
+android/*.properties
+ios/.generated/
+
+# Arquivos de artefatos e logs
+*.log
+*.out
+*.ap_
+*.apk
+*.hprof
+
+# Arquivos de cache
+**/node_modules/
+
+# Pastas e arquivos temporários do editor
+*.swp
+*.tmp
+
+# Arquivos específicos do IDE
+*.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+
+# Diretórios de dependências específicas
+**/Pods/
