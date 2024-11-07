@@ -1,0 +1,17 @@
+===GIT===
+Push (enviar):                                   git push -u -f origin master
+Pull (baixar):                                   git pull origin master
+Configurar nome:                                 git config --global user.name "nome"
+Configurar email:                                git config --global user.email "nome"
+Iniciar novo repositório Git:                    git init
+Clonar um repositório remoto:                    git clone "URL"
+Realizando um commit:                            git commit -m “mensagem”
+Visualizar log:                                  git log --pretty=format: "%h %s" --graph
+Ver repositórios remotos:                        git remote -v
+Adicionar repositório remoto:                    git remote add <shortname> <url> (geralmente uso git remote add origin <url>)
+Criar novo branch:                               git branch "nome do branch"
+Para mudar para um branch existente:             git checkout "nome do branch"
+Ver branches e log:                              git log --oneline --decorate --graph --all
+Merge (lembrar de mudar para o branch destino):  git merge "nome do branch que deseja juntar"
+Apagar branch:                                   git branch -d "nome do branch"
+Fazer commit no último commit:                   git commit --amend "mensagem"
