@@ -1,35 +1,52 @@
 import 'package:flutter/material.dart';
 
-class MyEventsPage extends StatelessWidget {
-  final List<String> events = [
-    'Evento 1: Descrição do evento 1',
-    'Evento 2: Descrição do evento 2',
-    'Evento 3: Descrição do evento 3',
-  ];
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      home: const MyEventsPage(),
+    );
+  }
+}
+
+class MyEventsPage extends StatelessWidget {
+  const MyEventsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final List<String> events = [
+      'Evento 1: Descrição do evento 1',
+      'Evento 2: Descrição do evento 2',
+      'Evento 3: Descrição do evento 3',
+    ];
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Meus Eventos Criados'),
-        centerTitle: true, // Centraliza o título
+        title: const Text('Meus Eventos Criados'),
+        centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
       ),
       body: ListView.builder(
-        itemCount: events.length,
+        itemCount: events.length, // Corrigido: Definir itemCount
         itemBuilder: (context, index) {
           return Card(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             child: ListTile(
               title: Text(events[index].split(': ')[0]),
               subtitle: Text(events[index].split(': ')[1]),
               trailing: IconButton(
-                icon: Icon(Icons.delete),
+                icon: const Icon(Icons.delete),
                 onPressed: () {
                   // Adicione a lógica para excluir o evento aqui
                 },
