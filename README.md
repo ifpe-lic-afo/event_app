@@ -1,4 +1,4 @@
-# event_app
+# flutter_teste
 
 A new Flutter project.
 

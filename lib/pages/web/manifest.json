@@ -1,6 +1,6 @@
 {
-    "name": "flutter_teste",
-    "short_name": "flutter_teste",
+    "name": "pages",
+    "short_name": "pages",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
